@@ -1,0 +1,206 @@
+{% comment %} This is a horizontal slider not vertical like it says in the name {% endcomment %}
+
+<style>
+
+    .logo-slider-container {
+        overflow: hidden;
+        width: 100vw;
+        height: 260px;
+        background-color: black;
+        position: relative;
+    }
+
+    .parent-horizontal {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        background-color: transparent;
+        align-items: center;
+        width: max-content;
+        overflow: hidden;
+        max-height: 200px;
+        margin: 37px 0;
+        position: relative;
+    }
+
+    .logo-slider-container::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20%;
+        height: 100%;
+        background: linear-gradient(to left, rgba(255, 255, 255, 0), black);
+        content: "";
+        z-index: 2;
+    }
+
+    .logo-slider-container::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 20%;
+        height: 100%;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0), black);
+        content: "";
+        z-index: 2;
+    }
+
+    .scrolling-div-horizontal {
+        overflow: hidden;
+        height: max-content;
+        background-color: transparent;
+        animation: scroll2 30s linear infinite;
+        display: flex;
+    }
+
+    .scrolling-div-horizontal img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        margin: 0 35px;
+        max-height: 80px
+    }
+
+    .as-seen-on {
+        color: white;
+        font-size: 36px;
+        font-weight: bold;
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+        width: 100%;
+    }
+
+    @keyframes scroll2 {
+        from {
+        transform: translateX(0);
+        }
+
+        to {
+        transform: translateX(-100%);
+
+        }
+    }
+
+  @media screen and (max-width: 768px) {
+
+    .scrolling-div-horizontal img {
+      max-width: 180px;
+      max-height: 65px;
+    }
+
+    .as-seen-on {
+      font-size: 30px;
+      text-align: center;
+    }
+
+    .logo-slider-container {
+      height: 200px;
+      padding: 20px 0;
+    }
+
+    .parent-horizontal {
+      margin: 7px 0;
+    }
+
+    .logo-slider-container::before {
+        width: 0;
+    }
+
+    .logo-slider-container::after {
+        width: 0;
+    }
+
+  }
+
+</style>
+
+<div class="logo-slider-container">
+    <div class="as-seen-on">Vistos En</div>
+
+    <div class="parent-horizontal">
+        <div class="scrolling-div-horizontal"></div>
+    </div>
+
+    <div style="color: white; text-align: center; line-height: 2.5;">Elegidos por
+jugadores de los mejores equipos</div>
+</div>
+
+<script>
+  // Sample array of image URLs
+  const imagesArray = [];
+</script>
+
+{% for block in section.blocks %}
+  <script>
+    // Get the image URL from Liquid and push it to the JavaScript array
+    imagesArray.push("{{ block.settings.image | image_url }}");
+  </script>
+{% endfor %}
+
+<script>
+  
+  const imageWidth = 200;
+  
+  const numberOfImages = imagesArray.length;
+  
+  const scrollingLogosDiv = document.querySelector('.scrolling-div-horizontal');
+  const parentLogosDiv = document.querySelector('.parent-horizontal');
+  
+  // slider function
+  function runLogosSlider() {
+  
+    const screenWidth = screen.width;
+    const totalWidth = (imageWidth) * numberOfImages;
+  
+    const actualNumberOfDivsNeeded = Math.floor(screenWidth / totalWidth) + 1;
+  
+    addImages();
+  
+    // Function to add images to the scrolling div
+    function addImages() {
+      console.log('addImages ran');
+      console.log('actual number of divs needed:', actualNumberOfDivsNeeded);
+      for (i = 0; i < actualNumberOfDivsNeeded; i++) {
+        imagesArray.forEach((imageUrl, index) => {
+          const imgElement = document.createElement('img');
+          imgElement.src = imageUrl;
+          imgElement.alt = `Image ${index + 1}`;
+  
+          scrollingLogosDiv.appendChild(imgElement);
+        });
+      }
+      // duplicate scrolling divs
+      const clone = scrollingLogosDiv.cloneNode(true);
+      parentLogosDiv.appendChild(clone);
+    }
+  }
+  
+  // Initial call to set the viewport width on page load
+  runLogosSlider();
+</script>
+
+{% schema %}
+{
+  "name": "Brand Logo Slider",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "logo",
+      "name": "Logo",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Logo Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Brand Logo Slider",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

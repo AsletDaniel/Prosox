@@ -1,0 +1,173 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.mobile_padding_top }}px;
+    padding-bottom: {{ section.settings.mobile_padding_bottom }}px;
+  }
+
+  .countdown-bar-{{ section.id }} {
+    background-color: {{ section.settings.background_color }};
+    color: {{ section.settings.text_color }};
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+  .countdown-bar-{{ section.id }} .countdown-timer {
+    color: {{ section.settings.countdown_color }};
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 10px; /* Espacio entre temporizador y texto */
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.desktop_padding_top }}px;
+      padding-bottom: {{ section.settings.desktop_padding_bottom }}px;
+    }
+  }
+
+  .countdown-bar__container {
+    display: flex;
+    flex-direction: row; /* Asegura que los elementos estén en una fila */
+    justify-content: center;
+    align-items: center; /* Alineación vertical centrada */
+    column-gap: {{ section.settings.item_gap }}px;
+  }
+{%- endstyle -%}
+
+<div class="countdown-bar-{{ section.id }} section-{{ section.id }}-padding">
+  <div class="countdown-bar__container">
+    <div class="countdown-timer" id="countdown-{{ section.id }}">
+      <!-- Timer will be injected here by JavaScript -->
+    </div>
+    <div class="countdown-text">
+      {{ section.settings.countdown_text }}
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Countdown timer script
+    var countDownDate = new Date("{{ section.settings.end_date }}").getTime();
+
+    var countdownElement = document.getElementById("countdown-{{ section.id }}");
+
+    function updateTimer() {
+      var now = new Date().getTime();
+      var distance = countDownDate - now;
+
+      if (distance >= 0) {
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        countdownElement.innerHTML = hours + "h " + minutes + "m " + seconds + "s";
+      } else {
+        clearInterval(x);
+        countdownElement.innerHTML = "EXPIRED";
+      }
+    }
+
+    // Update the count down every 1 second
+    var x = setInterval(updateTimer, 1000);
+
+    // Call the function to show the timer immediately
+    updateTimer();
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Countdown Bar",
+  "settings": [
+    {
+      "type": "text",
+      "id": "countdown_text",
+      "label": "Countdown Text",
+      "default": "LAST CHANCE: 50% OFF SALE"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#00A65A"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "countdown_color",
+      "label": "Countdown Color",
+      "default": "#FFFF00"
+    },
+    {
+      "type": "text",
+      "id": "end_date",
+      "label": "Countdown End Date",
+      "default": "2024-09-15T00:00:00"
+    },
+    {
+      "type": "range",
+      "id": "item_gap",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Gap Between Timer and Text",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Mobile Padding Top",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Mobile Padding Bottom",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "desktop_padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Desktop Padding Top",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "desktop_padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Desktop Padding Bottom",
+      "default": 16
+    }
+  ],
+  "presets": [
+    {
+      "name": "Countdown Bar"
+    }
+  ]
+}
+{% endschema %}

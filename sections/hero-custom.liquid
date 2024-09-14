@@ -1,0 +1,490 @@
+<style>
+  .custom-hero-container {
+    width: 100vw;
+    margin: auto;
+    max-width: 2000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .custom-hero-container::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 450px;
+    background: linear-gradient(to bottom, transparent, black);
+    content: "";
+  }
+
+  .parent {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    overflow: hidden;
+    height: 750px;
+    width: 20%;
+  }
+
+  .scrolling-div {
+    height: max-content;
+    background-color: black;
+    animation: scroll 60s linear infinite;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .small {
+    width: 14%;
+  }
+
+  .large {
+    width: 29%;
+  }
+
+  .reverse-animation {
+    animation: scroll 60s linear infinite reverse;
+  }
+
+  .animation-delay-20s {
+    animation-delay: 20s;
+  }
+
+
+  .scrolling-div img {
+    margin: 0;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+
+  .overlay-text {
+    position: absolute;
+    bottom: 120px;
+    left: 20px;
+    color: white;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    gap: 10px;
+  }
+
+  .overlay-text .icon {
+    display: block;
+    margin-right: 10px;
+  }
+
+  .overlay-text .shop-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 28px;
+    z-index: 3;
+    height: 56px;
+    text-align: center;
+    width: 100%;
+    max-width: 285px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+
+  .overlay-text .shop-button:hover {
+    background-color: #00AF6A;
+    color: white;
+  }
+
+  .overlay-header-text {
+    display: block;
+    color: white;
+    font-size: 60px;
+    letter-spacing: -1px;
+    word-spacing: normal;
+    font-family: 'Anton SC';
+    line-height: 1;
+  }
+
+  .line-2 {
+    margin-top: -48px;
+  }
+
+  .overlay-header  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 47px;
+    margin-top: -15px;
+  }
+
+  .overlay-paragraph {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .overlay-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  @keyframes scroll {
+    from {
+      transform: translateY(0);
+      /* Start at top */
+    }
+
+    to {
+      transform: translateY(-100%);
+      /* Move up */
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .parent {
+      height: 650px;
+    }
+
+    .small {
+      width: 50%;
+    }
+
+    .large {
+      width: 50%;
+    }
+
+    .overlay-text {
+      width: 100%;
+      text-align: center;
+      left: 50%;
+      transform: translateX(-50%);
+      align-items: center;
+      bottom: 40px;
+    }
+
+    .overlay-text .shop-button {
+      height: 4.6rem;
+      border-radius: 2.3rem;
+      min-width: 260px;
+      line-height: 2;
+    }
+
+    .overlay-header-text {
+      font-size: 48px;
+    }
+
+    .line-2 {
+      margin-top: -38px;
+    }
+
+    .overlay-paragraph {
+      margin: 0;
+      font-size: 13px;
+      line-height: 1.4;
+      align-items: center;
+    }
+
+    .overlay-header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      margin-top: -5px;
+    }
+
+    .overlay-button {
+      display: block;
+      width: auto;
+      text-align: center;
+      margin-top: 5px;
+    }
+
+  }
+</style>
+
+{% comment %} hero slider container {% endcomment %}
+<div class="custom-hero-container">
+  <div class="parent large" slider-1="">
+    <div class="scrolling-div" slider-1=""></div>
+  </div>
+  <div class="parent small" slider-2="">
+    <div class="scrolling-div" slider-2=""></div>
+  </div>
+  <div class="parent large" slider-3="">
+    <div class="scrolling-div" slider-3=""></div>
+  </div>
+  <div class="parent small" slider-4="">
+    <div class="scrolling-div" slider-4=""></div>
+  </div>
+  <div class="parent small" slider-5="">
+    <div class="scrolling-div" slider-5=""></div>
+  </div>
+
+  <div class="overlay-text">
+    <div class="overlay-paragraph">
+      <span>{{ section.settings.hero_overlay_above_header }}</span>
+    </div>
+
+    <div class="overlay-header">
+      <span class="overlay-header-text">{{ section.settings.hero_overlay_header }}</span>
+    </div>
+
+    <div class="overlay-paragraph">
+      <span>{{ section.settings.hero_overlay_below_header }}</span>
+    </div>
+
+    <div class="overlay-button">
+      <a href="{{ section.settings.destination_collection_url }}" class="shop-button">
+        {{- section.settings.hero_overlay_button_text -}}
+      </a>
+    </div>
+  </div>
+</div>
+
+{% comment %} hero sliders images {% endcomment %}
+<script>
+  // Sample array of image URLs
+  const imagesArray1 = [];
+  const imagesArray2 = [];
+  const imagesArray3 = [];
+  const imagesArray4 = [];
+  const imagesArray5 = [];
+
+  const imagesArrays = {
+    1: imagesArray1,
+    2: imagesArray2,
+    3: imagesArray3,
+    4: imagesArray4,
+    5: imagesArray5
+  };
+
+  console.log({imagesArrays});
+</script>
+
+<script>
+  let blockIndexString = '';
+  let blockIndex = '';
+  let imageUrl = '';
+  let blockId = '';
+</script>
+
+{% for block in section.blocks %}
+  {% assign blockIndexString = block.id %}
+
+  <script>
+    // Get the image URL from Liquid and push it to the pertinent JavaScript array
+
+    blockIndexString = '{{ blockIndexString }}';
+    blockIndex = blockIndexString.split('_')[1];
+
+    blockId = `slider_${blockIndex}_image`;
+
+    switch(blockIndex) {
+      case '1':
+        imageUrl = "{{ block.settings.slider_1_image | image_url }}";
+        break;
+      case '2':
+        imageUrl = "{{ block.settings.slider_2_image | image_url }}";
+        break;
+      case '3':
+        imageUrl = "{{ block.settings.slider_3_image | image_url }}";
+        break;
+      case '4':
+        imageUrl = "{{ block.settings.slider_4_image | image_url }}";
+        break;
+      case '5':
+        imageUrl = "{{ block.settings.slider_5_image | image_url }}";
+        break;
+      default:
+        console.log('No valid block index found.');
+    }
+
+    if (imageUrl) {
+      // Push the image URL into the corresponding array
+      imagesArrays[blockIndex].push(imageUrl);
+    }
+  </script>
+{% endfor %}
+
+{% comment %} hero slider script {% endcomment %}
+<script>
+
+  document.addEventListener('DOMContentLoaded', () => {
+    // Initial call to set the viewport height on page load
+    const screenWidth = window.screen.width;
+    
+    // slider function
+    function runSlider(index, sliderDirection, colapse) {
+
+      const scrollingDiv = document.querySelector(`div.scrolling-div[slider-${index}]`);
+      const parentDiv = document.querySelector(`div.parent[slider-${index}]`);
+    
+      addImages();
+    
+      // Function to add images to the scrolling div
+      function addImages() {
+
+          const imgArr = imagesArrays[index];
+
+          imgArr.forEach((imageUrl, index) => {
+            const imgElement = document.createElement('img');
+            imgElement.src = imageUrl;
+            imgElement.alt = `Image ${index + 1}`;
+    
+            scrollingDiv.appendChild(imgElement);
+
+          });
+
+        // Apply the appropriate animation direanimation-delay-10sction
+        if (sliderDirection == 'reverse') {
+          scrollingDiv.classList.add('reverse-animation');
+        } else {
+          scrollingDiv.classList.remove('reverse-animation');
+        }
+
+        // colapse the last 3 divs for mobile
+        if(screenWidth <= 768) {
+          // Select last 3 parent div elements
+          const divsToTrunOff = document.querySelectorAll('[slider-3], [slider-4], [slider-5]');
+
+          // Iterate over each parentDiv and apply the style
+          divsToTrunOff.forEach(parentDiv => {
+          parentDiv.style.display = 'none';
+        });
+
+        }
+
+        // duplicate scrolling div
+        const clone = scrollingDiv.cloneNode(true);
+        parentDiv.appendChild(clone);
+      }
+    }
+
+
+    if(screenWidth > 768) {
+      runSlider('1', 'forward');
+      runSlider('2', 'reverse');
+      runSlider('3', 'forward');
+      runSlider('4', 'reverse');
+      runSlider('5', 'forward');
+    }
+    else {
+      runSlider('1', 'forward', 'colapse');
+      runSlider('2', 'reverse', 'colapse');
+    }
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Custom Hero",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "For the multi-line text boxes below, if a line break is needed, insert \"<br>\" (without the double-quotes) where needed."
+    },
+    {
+      "type": "textarea",
+      "id": "hero_overlay_above_header",
+      "label": "Hero Overlay Text",
+      "info": "Enter the text you'd like to insert above the header"
+    },
+    {
+      "type": "textarea",
+      "id": "hero_overlay_header",
+      "label": "Hero Overlay Header"
+    },
+    {
+      "type": "textarea",
+      "id": "hero_overlay_below_header",
+      "label": "Hero Overlay Text",
+      "info": "Enter the text you'd like to insert below the header"
+    },
+    {
+      "type": "text",
+      "id": "hero_overlay_button_text",
+      "label": "Hero Overlay Button Text",
+      "info": "Enter the text you'd like for the overlay button"
+    },
+    {
+      "type": "url",
+      "id": "destination_collection_url",
+      "label": "Button Destination Collection URL",
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slider-1",
+      "name": "Column 1 Slider Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "slider_1_image",
+          "label": "1st Column Slider Image"
+        }
+      ]
+    },
+    {
+      "type": "slider-2",
+      "name": "Column 2 Slider Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "slider_2_image",
+          "label": "2nd Column Slider Image"
+        }
+      ]
+    },
+    {
+      "type": "slider-3",
+      "name": "Column 3 Slider Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "slider_3_image",
+          "label": "3rd Column Slider Image"
+        }
+      ]
+    },
+    {
+      "type": "slider-4",
+      "name": "Column 4 Slider Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "slider_4_image",
+          "label": "4th Column Slider Image"
+        }
+      ]
+    },
+    {
+      "type": "slider-5",
+      "name": "Column 5 Slider Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "slider_5_image",
+          "label": "5th Column Slider Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Hero"
+    }
+
+  ],
+  "limit": 1
+}
+{% endschema %}

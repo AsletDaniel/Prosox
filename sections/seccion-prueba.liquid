@@ -1,0 +1,153 @@
+{% schema %}
+{
+  "name": "Tabla comparativa",
+  "settings": [
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "Ancho de la sección",
+      "options": [
+        { "value": "narrow", "label": "Estrecho" },
+        { "value": "wide", "label": "Ancho" },
+        { "value": "full", "label": "Ancho completo" }
+      ],
+      "default": "wide"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtítulo"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Título"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Imagen"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "comparison_item",
+      "name": "Elemento de comparación",
+      "settings": [
+        {
+          "type": "text",
+          "id": "feature",
+          "label": "Característica"
+        },
+        {
+          "type": "text",
+          "id": "joga",
+          "label": "Joga"
+        },
+        {
+          "type": "text",
+          "id": "competitor",
+          "label": "Competidor"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+<div class="tabla-comparativa {% if section.settings.section_width == 'narrow' %}container-narrow{% elsif section.settings.section_width == 'wide' %}container-wide{% else %}container-full{% endif %}">
+  <div class="row">
+    <div class="col-30">
+      <h3>{{ section.settings.subtitle }}</h3>
+      <h2>{{ section.settings.title }}</h2>
+      
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Característica</th>
+            <th>Joga</th>
+            <th>Competidor</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for block in section.blocks %}
+            {% if block.type == 'comparison_item' %}
+              <tr>
+                <td class="feature-column">{{ block.settings.feature }}</td>
+                <td>{{ block.settings.joga }}</td>
+                <td>{{ block.settings.competitor }}</td>
+              </tr>
+            {% endif %}
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    
+    <div class="col-70">
+      {% if section.settings.image != blank %}
+        <img src="{{ section.settings.image | img_url: 'master' }}" alt="{{ section.settings.image.alt | escape }}">
+      {% else %}
+        {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% stylesheet %}
+.tabla-comparativa {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.container-narrow {
+  --container-width: 800px;
+}
+
+.container-wide {
+  --container-width: 1200px;
+}
+
+.container-full {
+  --container-width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-30 {
+  flex: 0 0 30%;
+  padding: 1rem;
+}
+
+.col-70 {
+  flex: 0 0 70%;
+  padding: 1rem;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.comparison-table th,
+.comparison-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.comparison-table .feature-column {
+  font-weight: bold;
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  .col-30, .col-70 {
+    flex: 0 0 100%;
+  }
+}
+{% endstylesheet %}

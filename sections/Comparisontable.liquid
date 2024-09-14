@@ -1,0 +1,278 @@
+{% schema %}
+{
+  "name": "Why JOGA?",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "WHY JOGA?"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "highlight_color",
+      "label": "Title Highlight Color",
+      "default": "#ffff00"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#000000"
+    },
+    {
+      "type": "image_picker",
+      "id": "joga_main_image",
+      "label": "JOGA Main Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "competitor_main_image",
+      "label": "Competitor Main Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "additional_image",
+      "label": "Additional Image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "comparison_item",
+      "name": "Comparison Item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "joga_icon",
+          "label": "JOGA Icon"
+        },
+        {
+          "type": "text",
+          "id": "joga_feature",
+          "label": "JOGA Feature",
+          "default": "Compact Shinpads for Optimal Mobility"
+        },
+        {
+          "type": "image_picker",
+          "id": "competitor_icon",
+          "label": "Competitor Icon"
+        },
+        {
+          "type": "text",
+          "id": "competitor_feature",
+          "label": "Competitor Feature",
+          "default": "Clunky Design, Reduced Mobility"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Why JOGA?",
+      "blocks": [
+        {
+          "type": "comparison_item"
+        },
+        {
+          "type": "comparison_item"
+        },
+        {
+          "type": "comparison_item"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+  
+  #shopify-section-{{ section.id }} {
+    background-color: {{ section.settings.background_color }};
+    color: #ffffff;
+    padding: 60px 0;
+    width: 100%;
+  }
+
+  .why-joga-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .why-joga-title {
+    font-family: 'Anton', sans-serif;
+    font-size: 48px;
+    color: {{ section.settings.title_color }};
+    line-height: 1.2;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  .why-joga-title span {
+    color: {{ section.settings.highlight_color }};
+  }
+
+  .comparison-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+  }
+
+  .comparison-table {
+  display: flex;
+  border-radius: 30px;
+  overflow: hidden;
+  width: 100%; /* Full width */
+}
+  .joga-column, .competitor-column {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .joga-column {
+  flex: 0.6; /* Adjust this based on desired size */
+  background-color: #00a86b;
+}
+
+  .competitor-column {
+  flex: 0.4; /* Adjust this based on desired size */
+  background-color: #333333;
+}
+
+  .main-image-container {
+    width: 100%;
+    height: 200px;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  .main-image-joga, .main-image-competitor {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  position: relative; /* Change to relative if needed */
+  top: 0; /* Adjust as needed */
+}
+
+  .comparison-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  justify-content: space-between; /* Aligns the icons and text better */
+}
+
+  .comparison-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  .joga-feature, .competitor-feature {
+    flex: 1;
+    font-size: 16px;
+  }
+
+  .competitor-feature {
+    color: #ff4d4d;
+  }
+
+  .additional-image-container {
+  width: 40%; /* Adjust based on the space you want for the image */
+  height: 100%; /* Make sure the height adjusts correctly */
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+  .additional-image {
+  width: 100%;
+  height: auto; /* Ensures the image scales correctly */
+  object-fit: cover;
+}
+
+  @media screen and (max-width: 1024px) {
+    .comparison-row {
+      flex-direction: column;
+    }
+
+    .comparison-table,
+    .additional-image-container {
+      width: 100%;
+    }
+
+    .additional-image-container {
+      height: 300px;
+    }
+  }
+</style>
+
+<div class="why-joga-container">
+  <h2 class="why-joga-title">
+    {% assign words = section.settings.title | split: ' ' %}
+    {% for word in words %}
+      {% if forloop.last %}
+        <span>{{ word }}</span>
+      {% else %}
+        {{ word }}
+      {% endif %}
+    {% endfor %}
+  </h2>
+  
+  <div class="comparison-row">
+    <div class="comparison-table">
+      <div class="joga-column">
+        <div class="main-image-container">
+          {% if section.settings.joga_main_image %}
+            <img src="{{ section.settings.joga_main_image | img_url: '600x' }}" alt="JOGA Main Image" class="main-image-joga">
+          {% endif %}
+        </div>
+        
+        {% for block in section.blocks %}
+          {% if block.type == 'comparison_item' %}
+            <div class="comparison-item">
+              <img src="{{ block.settings.joga_icon | img_url: '30x' }}" alt="" class="comparison-icon">
+              <div class="joga-feature">{{ block.settings.joga_feature }}</div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+      
+      <div class="competitor-column">
+        <div class="main-image-container">
+          {% if section.settings.competitor_main_image %}
+            <img src="{{ section.settings.competitor_main_image | img_url: '600x' }}" alt="Competitor Main Image" class="main-image-competitor">
+          {% endif %}
+        </div>
+        
+        {% for block in section.blocks %}
+          {% if block.type == 'comparison_item' %}
+            <div class="comparison-item">
+              <img src="{{ block.settings.competitor_icon | img_url: '30x' }}" alt="" class="comparison-icon">
+              <div class="competitor-feature">{{ block.settings.competitor_feature }}</div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+
+    {% if section.settings.additional_image %}
+      <div class="additional-image-container">
+        <img src="{{ section.settings.additional_image | img_url: '1200x' }}" alt="Additional Image" class="additional-image">
+      </div>
+    {% endif %}
+  </div>
+</div>

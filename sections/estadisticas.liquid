@@ -1,0 +1,247 @@
+{% schema %}
+{
+  "name": "Statistics Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "WE RAISE THE BAR"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Section Subtitle",
+      "default": "Real performance gains with JOGA from recent data."
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Description Text Size",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "percentage_size",
+      "min": 24,
+      "max": 72,
+      "step": 2,
+      "unit": "px",
+      "label": "Percentage Size",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "section_padding",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "px",
+      "label": "Section Padding",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "item_gap",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "px",
+      "label": "Gap Between Items",
+      "default": 20 /* Reducido de 30 a 20 */
+    }
+  ],
+  "blocks": [
+    {
+      "type": "statistic",
+      "name": "Statistic",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "percentage",
+          "label": "Percentage",
+          "default": "95%"
+        },
+        {
+          "type": "html",
+          "id": "description",
+          "label": "Description",
+          "default": "of users experienced <span style=\"text-decoration: underline;\">improved performance</span>."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Statistics Section",
+      "blocks": [
+        {
+          "type": "statistic"
+        },
+        {
+          "type": "statistic"
+        },
+        {
+          "type": "statistic"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+<div class="statistics-section" style="padding: {{ section.settings.section_padding }}px;">
+  <h2 class="section-title">{{ section.settings.title }}</h2>
+  <p class="section-subtitle">{{ section.settings.subtitle }}</p>
+  
+  <div class="statistics-container" style="gap: {{ section.settings.item_gap }}px;">
+    {% for block in section.blocks %}
+      {% if block.type == 'statistic' %}
+        <div class="statistic-item {% cycle 'image-left', 'image-right' %}">
+          <div class="statistic-image-wrapper">
+            {% if block.settings.image %}
+              {{ block.settings.image | img_url: '300x300', crop: 'center' | img_tag: block.settings.image.alt, 'statistic-img' }}
+            {% else %}
+              {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+            {% endif %}
+          </div>
+          <div class="statistic-content">
+            <h3 class="statistic-percentage" style="font-size: {{ section.settings.percentage_size }}px;">{{ block.settings.percentage }}</h3>
+            <p class="statistic-description" style="font-size: {{ section.settings.text_size }}px;">{{ block.settings.description }}</p>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+{% stylesheet %}
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+.statistics-section {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-family: 'Anton', sans-serif;
+  font-size: 60px;
+  letter-spacing: -1px;
+  word-spacing: normal;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.statistics-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.statistic-item {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.statistic-image-wrapper {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.statistic-img,
+.placeholder-svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.statistic-content {
+  flex-grow: 1;
+}
+
+.statistic-percentage {
+  font-family: 'Anton', sans-serif;
+  font-weight: bold;
+  color: #FF0000; /* Cambiado a rojo */
+  margin-bottom: 5px;
+  line-height: 1;
+}
+
+.statistic-description {
+  line-height: 1.4;
+}
+
+@media screen and (max-width: 768px) {
+  .section-title {
+    font-size: 48px;
+  }
+
+  .section-subtitle {
+    font-size: 16px;
+  }
+
+  .statistics-container {
+    flex-direction: column;
+  }
+
+  .statistic-item {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .statistic-image-wrapper {
+    width: 100px;
+    height: 100px;
+    margin-right: 0;
+  }
+
+  .image-left {
+    flex-direction: row;
+  }
+
+  .image-right {
+    flex-direction: row-reverse;
+  }
+
+  .image-left .statistic-image-wrapper {
+    margin-right: 15px;
+  }
+
+  .image-right .statistic-image-wrapper {
+    margin-left: 15px;
+  }
+
+  .statistic-percentage {
+    font-size: 36px;
+  }
+
+  .statistic-description {
+    font-size: 14px;
+  }
+}
+{% endstylesheet %}
