@@ -1,0 +1,200 @@
+{% schema %}
+{
+  "name": "tablacomparativa",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Título principal",
+      "default": "How do we compare?"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtítulo",
+      "default": "WHY JOGA?"
+    },
+    {
+      "type": "image_picker",
+      "id": "player_image",
+      "label": "Imagen del jugador"
+    },
+    {
+      "type": "image_picker",
+      "id": "shinpad_icon",
+      "label": "Icono de espinilleras"
+    },
+    {
+      "type": "image_picker",
+      "id": "athletes_image",
+      "label": "Imagen de los atletas"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "comparison_item",
+      "name": "Elemento de comparación",
+      "settings": [
+        {
+          "type": "text",
+          "id": "joga_feature",
+          "label": "Característica de JOGA"
+        },
+        {
+          "type": "text",
+          "id": "competitor_feature",
+          "label": "Característica del competidor"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "¿Por qué JOGA?",
+      "blocks": [
+        {
+          "type": "comparison_item"
+        },
+        {
+          "type": "comparison_item"
+        },
+        {
+          "type": "comparison_item"
+        },
+        {
+          "type": "comparison_item"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+  .why-joga-container {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+  }
+  .why-joga-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .why-joga-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .why-joga-subtitle {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .why-joga-subtitle span {
+    color: #FFD700;
+  }
+  .comparison-columns {
+    display: flex;
+    width: 50%;
+  }
+  .joga-column, .competitor-column {
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .joga-column {
+    background-color: #00A86B;
+    margin-right: 10px;
+  }
+  .competitor-column {
+    background-color: #1A1A1A;
+  }
+  .feature-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  .feature-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  .feature-icon {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  .player-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+  }
+  .shinpad-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 60px;
+  }
+  .athletes-image {
+    width: 45%;
+    object-fit: cover;
+  }
+  @media (max-width: 768px) {
+    .why-joga-content {
+      flex-direction: column;
+    }
+    .comparison-columns, .joga-column, .competitor-column {
+      width: 100%;
+    }
+    .athletes-image {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+</style>
+
+<div class="why-joga-container">
+  <div class="why-joga-content">
+    <div>
+      <h2 class="why-joga-title">{{ section.settings.title }}</h2>
+      <h1 class="why-joga-subtitle">WHY <span>JOGA</span>?</h1>
+      <div class="comparison-columns">
+        <div class="joga-column">
+          {% if section.settings.player_image %}
+            <img src="{{ section.settings.player_image | img_url: '200x' }}" alt="Jugador JOGA" class="player-image">
+          {% endif %}
+          <ul class="feature-list">
+            {% for block in section.blocks %}
+              {% if block.type == 'comparison_item' %}
+                <li class="feature-item">
+                  <span class="feature-icon">🔥</span>
+                  {{ block.settings.joga_feature }}
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="competitor-column">
+          {% if section.settings.shinpad_icon %}
+            <img src="{{ section.settings.shinpad_icon | img_url: '60x' }}" alt="Icono de espinilleras" class="shinpad-icon">
+          {% endif %}
+          <ul class="feature-list">
+            {% for block in section.blocks %}
+              {% if block.type == 'comparison_item' %}
+                <li class="feature-item">
+                  <span class="feature-icon">❌</span>
+                  {{ block.settings.competitor_feature }}
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+    {% if section.settings.athletes_image %}
+      <img src="{{ section.settings.athletes_image | img_url: '600x' }}" alt="Atletas JOGA" class="athletes-image">
+    {% endif %}
+  </div>
+</div>
