@@ -1,6 +1,6 @@
 {% schema %}
 {
-  "name": "tablacomparativa",
+  "name": "¿Por qué JOGA?",
   "settings": [
     {
       "type": "text",
@@ -13,16 +13,6 @@
       "id": "subtitle",
       "label": "Subtítulo",
       "default": "WHY JOGA?"
-    },
-    {
-      "type": "image_picker",
-      "id": "player_image",
-      "label": "Imagen del jugador"
-    },
-    {
-      "type": "image_picker",
-      "id": "shinpad_icon",
-      "label": "Icono de espinilleras"
     },
     {
       "type": "image_picker",
@@ -50,7 +40,7 @@
   ],
   "presets": [
     {
-      "name": "tablacomparativa",
+      "name": "¿Por qué JOGA?",
       "blocks": [
         {
           "type": "comparison_item"
@@ -83,9 +73,13 @@
     display: flex;
     justify-content: space-between;
   }
+  .why-joga-left {
+    width: 60%;
+  }
   .why-joga-title {
     font-size: 18px;
     margin-bottom: 10px;
+    opacity: 0.7;
   }
   .why-joga-subtitle {
     font-size: 48px;
@@ -97,7 +91,7 @@
   }
   .comparison-columns {
     display: flex;
-    width: 50%;
+    width: 100%;
   }
   .joga-column, .competitor-column {
     width: 50%;
@@ -125,27 +119,16 @@
     margin-right: 10px;
     font-size: 20px;
   }
-  .player-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 200px;
-  }
-  .shinpad-icon {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 60px;
-  }
   .athletes-image {
-    width: 45%;
+    width: 35%;
     object-fit: cover;
+    align-self: flex-start;
   }
   @media (max-width: 768px) {
     .why-joga-content {
       flex-direction: column;
     }
-    .comparison-columns, .joga-column, .competitor-column {
+    .why-joga-left, .comparison-columns, .joga-column, .competitor-column {
       width: 100%;
     }
     .athletes-image {
@@ -157,14 +140,11 @@
 
 <div class="why-joga-container">
   <div class="why-joga-content">
-    <div>
+    <div class="why-joga-left">
       <h2 class="why-joga-title">{{ section.settings.title }}</h2>
       <h1 class="why-joga-subtitle">WHY <span>JOGA</span>?</h1>
       <div class="comparison-columns">
         <div class="joga-column">
-          {% if section.settings.player_image %}
-            <img src="{{ section.settings.player_image | img_url: '200x' }}" alt="Jugador JOGA" class="player-image">
-          {% endif %}
           <ul class="feature-list">
             {% for block in section.blocks %}
               {% if block.type == 'comparison_item' %}
@@ -177,9 +157,6 @@
           </ul>
         </div>
         <div class="competitor-column">
-          {% if section.settings.shinpad_icon %}
-            <img src="{{ section.settings.shinpad_icon | img_url: '60x' }}" alt="Icono de espinilleras" class="shinpad-icon">
-          {% endif %}
           <ul class="feature-list">
             {% for block in section.blocks %}
               {% if block.type == 'comparison_item' %}
