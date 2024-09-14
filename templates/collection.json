@@ -100,12 +100,107 @@
         "custom_gradient_background": "",
         "custom_colors_text": "#2e2a39"
       }
+    },
+    "icon_bar_QPzzXH": {
+      "type": "icon-bar",
+      "blocks": {
+        "column_4KAdxY": {
+          "type": "column",
+          "settings": {
+            "icon": "check_circle",
+            "filled_icon": false,
+            "image": "shopify:\/\/shop_images\/Recurso_9.svg",
+            "title": "ENVIOS GRATIS",
+            "text": "<p><\/p><p><\/p>"
+          }
+        },
+        "column_AEgfxb": {
+          "type": "column",
+          "settings": {
+            "icon": "check_circle",
+            "filled_icon": false,
+            "image": "shopify:\/\/shop_images\/Recurso_12.svg",
+            "title": "PAGA EN CASA",
+            "text": "<p><\/p><p><\/p>"
+          }
+        },
+        "column_kAN7WQ": {
+          "type": "column",
+          "settings": {
+            "icon": "check_circle",
+            "filled_icon": false,
+            "image": "shopify:\/\/shop_images\/Recurso_11.svg",
+            "title": "CAMBIOS GRATIS",
+            "text": "<p><\/p><p><\/p>"
+          }
+        },
+        "column_a7FFaA": {
+          "type": "column",
+          "settings": {
+            "icon": "check_circle",
+            "filled_icon": false,
+            "image": "shopify:\/\/shop_images\/Recurso_10.svg",
+            "title": "GARANTIA DE REMBOOLSO",
+            "text": "<p><\/p><p><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "column_4KAdxY",
+        "column_AEgfxb",
+        "column_kAN7WQ",
+        "column_a7FFaA"
+      ],
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "title": "",
+        "title_highlight_color": "#6D388B",
+        "heading_size": "h1",
+        "text": "",
+        "color_scheme": "background-1",
+        "icon_layout": "vertical",
+        "icon_size": "large",
+        "icon_color": "accent-1",
+        "cards_color_scheme": "background-1",
+        "type": "slide",
+        "autoplay": false,
+        "autoplay_speed": 5,
+        "arrows_color_scheme": "inverse",
+        "transparent_arrows": true,
+        "dots_color_scheme": "inverse",
+        "desktop_full_page": true,
+        "columns_desktop": 4,
+        "slider_desktop": false,
+        "per_move_desktop": 1,
+        "desktop_spacing": 40,
+        "desktop_side_padding": 0,
+        "desktop_padding_calc": true,
+        "desktop_adaptive_height": false,
+        "desktop_dots_position": "hidden",
+        "desktop_arrows_position": "sides",
+        "columns_mobile": "1",
+        "slider_mobile": true,
+        "enable_mobile_preview": false,
+        "mobile_adaptive_height": false,
+        "mobile_dots_position": "hidden",
+        "mobile_arrows_position": "under",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "custom_colors_background": "#FFFFFF",
+        "custom_gradient_background": "",
+        "custom_colors_text": "#2E2A39",
+        "custom_cards_colors_background": "#F3F3F3",
+        "custom_cards_gradient_background": "",
+        "custom_cards_colors_text": "#2E2A39"
+      }
     }
   },
   "order": [
     "image_banner_qkMqT7",
     "main-collection-banner",
     "main-collection-product-grid",
-    "collage"
+    "collage",
+    "icon_bar_QPzzXH"
   ]
 }
