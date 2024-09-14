@@ -608,94 +608,6 @@
         "item_gap": 0
       }
     },
-    "d2d3417b-e92f-428c-b221-5bceffb552be": {
-      "type": "comparison-table",
-      "blocks": {
-        "template--21507361505575__d2d3417b-e92f-428c-b221-5bceffb552be-row-1": {
-          "type": "row",
-          "settings": {
-            "benefit": "Preferidos por +350 profesionales",
-            "us": true,
-            "others": false
-          }
-        },
-        "template--21507361505575__d2d3417b-e92f-428c-b221-5bceffb552be-row-2": {
-          "type": "row",
-          "settings": {
-            "benefit": "+4 años de trayectoria",
-            "us": true,
-            "others": false
-          }
-        },
-        "template--21507361505575__d2d3417b-e92f-428c-b221-5bceffb552be-row-3": {
-          "type": "row",
-          "settings": {
-            "benefit": "+20.000 clientes satisfechos",
-            "us": true,
-            "others": false
-          }
-        }
-      },
-      "block_order": [
-        "template--21507361505575__d2d3417b-e92f-428c-b221-5bceffb552be-row-1",
-        "template--21507361505575__d2d3417b-e92f-428c-b221-5bceffb552be-row-2",
-        "template--21507361505575__d2d3417b-e92f-428c-b221-5bceffb552be-row-3"
-      ],
-      "disabled": true,
-      "settings": {
-        "display_id": false,
-        "visibility": "always-display",
-        "title": "¿ Por qué Prosox?",
-        "title_highlight_color": "#6d388b",
-        "heading_size": "h1",
-        "text": "<p>Somos la marca #1 de los futbolistas colombianos<\/p>",
-        "button_label": "",
-        "link": "",
-        "button_style_secondary": false,
-        "atc_button_label": "",
-        "atc_product": "",
-        "atc_skip_cart": false,
-        "color_scheme": "background-1",
-        "layout": "table_second",
-        "style": "centered",
-        "us_label": "[shop_name]",
-        "us_label_size": 18,
-        "logo": "shopify:\/\/shop_images\/logo_transparencia_2.png",
-        "logo_width": 90,
-        "mobile_logo_width": 60,
-        "others_label": "Otros",
-        "others_label_size": 18,
-        "others_logo": "shopify:\/\/shop_images\/Canilller.webp",
-        "others_logo_width": 90,
-        "others_mobile_logo_width": 60,
-        "checkmark_style": "regular",
-        "checkmark_color": "#ffffff",
-        "checkmark_bg_color": "#53af01",
-        "x_style": "regular",
-        "x_color": "#121212",
-        "x_bg_color": "#dbdbdb",
-        "opposite_icon_colors": "original",
-        "highlighted_color_scheme": "accent-1",
-        "highlighted_separator_opacity": 0,
-        "highlighted_overlay_opacity": 0,
-        "other_cells_color_scheme": "background-1",
-        "regular_separator_opacity": 10,
-        "regular_overlay_opacity": 0,
-        "minimalistic_border_opacity": 16,
-        "padding_top": 0,
-        "padding_bottom": 36,
-        "custom_colors_background": "#ffffff",
-        "custom_gradient_background": "",
-        "custom_colors_text": "#2e2a39",
-        "custom_colors_solid_button_background": "#dd1d1d",
-        "custom_colors_solid_button_text": "#ffffff",
-        "custom_colors_outline_button": "#dd1d1d",
-        "custom_colors_highlighted_background": "#2e2a39",
-        "custom_colors_highlighted_text": "#ffffff",
-        "custom_colors_others_background": "#ffffff",
-        "custom_colors_others_text": "#2e2a39"
-      }
-    },
     "icon_bar_ztfr6X": {
       "type": "icon-bar",
       "blocks": {
@@ -790,6 +702,93 @@
         "custom_cards_colors_text": "#2e2a39"
       }
     },
+    "d2d3417b-e92f-428c-b221-5bceffb552be": {
+      "type": "comparison-table",
+      "blocks": {
+        "template--21507361505575__d2d3417b-e92f-428c-b221-5bceffb552be-row-1": {
+          "type": "row",
+          "settings": {
+            "benefit": "Preferidos por +350 profesionales",
+            "us": true,
+            "others": false
+          }
+        },
+        "template--21507361505575__d2d3417b-e92f-428c-b221-5bceffb552be-row-2": {
+          "type": "row",
+          "settings": {
+            "benefit": "+4 años de trayectoria",
+            "us": true,
+            "others": false
+          }
+        },
+        "template--21507361505575__d2d3417b-e92f-428c-b221-5bceffb552be-row-3": {
+          "type": "row",
+          "settings": {
+            "benefit": "+20.000 clientes satisfechos",
+            "us": true,
+            "others": false
+          }
+        }
+      },
+      "block_order": [
+        "template--21507361505575__d2d3417b-e92f-428c-b221-5bceffb552be-row-1",
+        "template--21507361505575__d2d3417b-e92f-428c-b221-5bceffb552be-row-2",
+        "template--21507361505575__d2d3417b-e92f-428c-b221-5bceffb552be-row-3"
+      ],
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "title": "¿PORQUE PROSOX?",
+        "title_highlight_color": "#6d388b",
+        "heading_size": "h1",
+        "text": "<p>Somos la marca #1 de los futbolistas colombianos<\/p>",
+        "button_label": "",
+        "link": "",
+        "button_style_secondary": false,
+        "atc_button_label": "",
+        "atc_product": "",
+        "atc_skip_cart": false,
+        "color_scheme": "background-1",
+        "layout": "table_second",
+        "style": "centered",
+        "us_label": "[shop_name]",
+        "us_label_size": 18,
+        "logo": "shopify:\/\/shop_images\/Chico.webp",
+        "logo_width": 150,
+        "mobile_logo_width": 60,
+        "others_label": "Otros",
+        "others_label_size": 18,
+        "others_logo": "shopify:\/\/shop_images\/Canilller.webp",
+        "others_logo_width": 90,
+        "others_mobile_logo_width": 60,
+        "checkmark_style": "regular",
+        "checkmark_color": "#ffffff",
+        "checkmark_bg_color": "#53af01",
+        "x_style": "solid",
+        "x_color": "#121212",
+        "x_bg_color": "#dbdbdb",
+        "opposite_icon_colors": "original",
+        "highlighted_color_scheme": "accent-1",
+        "highlighted_separator_opacity": 0,
+        "highlighted_overlay_opacity": 0,
+        "other_cells_color_scheme": "background-1",
+        "regular_separator_opacity": 10,
+        "regular_overlay_opacity": 0,
+        "minimalistic_border_opacity": 16,
+        "padding_top": 0,
+        "padding_bottom": 36,
+        "custom_colors_background": "#ffffff",
+        "custom_gradient_background": "",
+        "custom_colors_text": "#2e2a39",
+        "custom_colors_solid_button_background": "#dd1d1d",
+        "custom_colors_solid_button_text": "#ffffff",
+        "custom_colors_outline_button": "#dd1d1d",
+        "custom_colors_highlighted_background": "#2e2a39",
+        "custom_colors_highlighted_text": "#ffffff",
+        "custom_colors_others_background": "#ffffff",
+        "custom_colors_others_text": "#2e2a39"
+      }
+    },
     "comparisontable_dPczcn": {
       "type": "Comparisontable",
       "blocks": {
@@ -846,50 +845,6 @@
         "competitor_main_image": "shopify:\/\/shop_images\/Canilller.webp",
         "additional_image": "shopify:\/\/shop_images\/BanneCan.webp"
       }
-    },
-    "tablacomparativa_F64Xgf": {
-      "type": "tablacomparativa",
-      "blocks": {
-        "comparison_item_LqeVUe": {
-          "type": "comparison_item",
-          "settings": {
-            "joga_feature": "TEEEEEEES",
-            "competitor_feature": "TEEEEEEEST"
-          }
-        },
-        "comparison_item_bKKanx": {
-          "type": "comparison_item",
-          "settings": {
-            "joga_feature": "",
-            "competitor_feature": ""
-          }
-        },
-        "comparison_item_NRqXnE": {
-          "type": "comparison_item",
-          "settings": {
-            "joga_feature": "",
-            "competitor_feature": ""
-          }
-        },
-        "comparison_item_rbPUDN": {
-          "type": "comparison_item",
-          "settings": {
-            "joga_feature": "",
-            "competitor_feature": ""
-          }
-        }
-      },
-      "block_order": [
-        "comparison_item_LqeVUe",
-        "comparison_item_bKKanx",
-        "comparison_item_NRqXnE",
-        "comparison_item_rbPUDN"
-      ],
-      "settings": {
-        "player_image": "shopify:\/\/shop_images\/Chico.webp",
-        "shinpad_icon": "shopify:\/\/shop_images\/Canilller.webp",
-        "athletes_image": "shopify:\/\/shop_images\/BanneCan.webp"
-      }
     }
   },
   "order": [
@@ -902,9 +857,8 @@
     "featured_product_dQyfhy",
     "image_slider_jcTRET",
     "estadisticas_JUNmDH",
-    "d2d3417b-e92f-428c-b221-5bceffb552be",
     "icon_bar_ztfr6X",
-    "comparisontable_dPczcn",
-    "tablacomparativa_F64Xgf"
+    "d2d3417b-e92f-428c-b221-5bceffb552be",
+    "comparisontable_dPczcn"
   ]
 }
