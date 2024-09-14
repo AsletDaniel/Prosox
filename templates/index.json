@@ -886,10 +886,9 @@
         "comparison_item_rbPUDN"
       ],
       "settings": {
-        "title": "How do we compare?",
-        "subtitle": "WHY JOGA?",
         "player_image": "shopify:\/\/shop_images\/Chico.webp",
-        "shinpad_icon": "shopify:\/\/shop_images\/Canilller.webp"
+        "shinpad_icon": "shopify:\/\/shop_images\/Canilller.webp",
+        "athletes_image": "shopify:\/\/shop_images\/BanneCan.webp"
       }
     }
   },
