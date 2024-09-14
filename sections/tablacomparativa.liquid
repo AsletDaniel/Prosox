@@ -3,12 +3,6 @@
   "name": "¿Por qué JOGA?",
   "settings": [
     {
-      "type": "text",
-      "id": "title",
-      "label": "Título principal",
-      "default": "WHY JOGA?"
-    },
-    {
       "type": "image_picker",
       "id": "player_image",
       "label": "Imagen del jugador"
@@ -78,6 +72,7 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
   }
   .why-joga-left {
     width: 60%;
@@ -99,11 +94,12 @@
     width: 50%;
     padding: 20px;
     border-radius: 10px;
+    position: relative;
+    overflow: hidden;
   }
   .joga-column {
     background-color: #00A86B;
     margin-right: 10px;
-    position: relative;
   }
   .competitor-column {
     background-color: #1A1A1A;
@@ -111,6 +107,8 @@
   .feature-list {
     list-style-type: none;
     padding: 0;
+    position: relative;
+    z-index: 2;
   }
   .feature-item {
     display: flex;
@@ -124,21 +122,22 @@
   }
   .player-image {
     position: absolute;
-    top: -100px;
+    top: -50px;
     left: -20px;
     width: 200px;
     z-index: 1;
   }
   .shinpad-icon {
     position: absolute;
-    top: -30px;
+    top: 10px;
     right: 10px;
     width: 60px;
+    z-index: 1;
   }
   .athletes-image {
     width: 35%;
     object-fit: cover;
-    align-self: flex-start;
+    border-radius: 10px;
   }
   @media (max-width: 768px) {
     .why-joga-content {
