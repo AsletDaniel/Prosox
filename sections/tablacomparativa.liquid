@@ -6,13 +6,17 @@
       "type": "text",
       "id": "title",
       "label": "Título principal",
-      "default": "How do we compare?"
+      "default": "WHY JOGA?"
     },
     {
-      "type": "text",
-      "id": "subtitle",
-      "label": "Subtítulo",
-      "default": "WHY JOGA?"
+      "type": "image_picker",
+      "id": "player_image",
+      "label": "Imagen del jugador"
+    },
+    {
+      "type": "image_picker",
+      "id": "shinpad_icon",
+      "label": "Icono de espinilleras"
     },
     {
       "type": "image_picker",
@@ -28,12 +32,14 @@
         {
           "type": "text",
           "id": "joga_feature",
-          "label": "Característica de JOGA"
+          "label": "Característica de JOGA",
+          "default": "Compact Shinpads for Optimal Mobility"
         },
         {
           "type": "text",
           "id": "competitor_feature",
-          "label": "Característica del competidor"
+          "label": "Característica del competidor",
+          "default": "Clunky Design, Reduced Mobility"
         }
       ]
     }
@@ -77,21 +83,17 @@
     width: 60%;
   }
   .why-joga-title {
-    font-size: 18px;
-    margin-bottom: 10px;
-    opacity: 0.7;
-  }
-  .why-joga-subtitle {
     font-size: 48px;
     font-weight: bold;
     margin-bottom: 20px;
   }
-  .why-joga-subtitle span {
+  .why-joga-title span {
     color: #FFD700;
   }
   .comparison-columns {
     display: flex;
     width: 100%;
+    position: relative;
   }
   .joga-column, .competitor-column {
     width: 50%;
@@ -101,6 +103,7 @@
   .joga-column {
     background-color: #00A86B;
     margin-right: 10px;
+    position: relative;
   }
   .competitor-column {
     background-color: #1A1A1A;
@@ -118,6 +121,19 @@
   .feature-icon {
     margin-right: 10px;
     font-size: 20px;
+  }
+  .player-image {
+    position: absolute;
+    top: -100px;
+    left: -20px;
+    width: 200px;
+    z-index: 1;
+  }
+  .shinpad-icon {
+    position: absolute;
+    top: -30px;
+    right: 10px;
+    width: 60px;
   }
   .athletes-image {
     width: 35%;
@@ -141,10 +157,12 @@
 <div class="why-joga-container">
   <div class="why-joga-content">
     <div class="why-joga-left">
-      <h2 class="why-joga-title">{{ section.settings.title }}</h2>
-      <h1 class="why-joga-subtitle">WHY <span>JOGA</span>?</h1>
+      <h1 class="why-joga-title">WHY <span>JOGA</span>?</h1>
       <div class="comparison-columns">
         <div class="joga-column">
+          {% if section.settings.player_image %}
+            <img src="{{ section.settings.player_image | img_url: '300x' }}" alt="Jugador JOGA" class="player-image">
+          {% endif %}
           <ul class="feature-list">
             {% for block in section.blocks %}
               {% if block.type == 'comparison_item' %}
@@ -157,6 +175,9 @@
           </ul>
         </div>
         <div class="competitor-column">
+          {% if section.settings.shinpad_icon %}
+            <img src="{{ section.settings.shinpad_icon | img_url: '120x' }}" alt="Icono de espinilleras" class="shinpad-icon">
+          {% endif %}
           <ul class="feature-list">
             {% for block in section.blocks %}
               {% if block.type == 'comparison_item' %}
