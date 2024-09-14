@@ -847,31 +847,31 @@
         "additional_image": "shopify:\/\/shop_images\/BanneCan.webp"
       }
     },
-    "tablacomparativa_9ryMce": {
+    "tablacomparativa_F64Xgf": {
       "type": "tablacomparativa",
       "blocks": {
-        "comparison_item_wUFQhw": {
-          "type": "comparison_item",
-          "settings": {
-            "joga_feature": "tetetete",
-            "competitor_feature": "tetetete"
-          }
-        },
-        "comparison_item_d6JJbk": {
+        "comparison_item_LqeVUe": {
           "type": "comparison_item",
           "settings": {
             "joga_feature": "",
             "competitor_feature": ""
           }
         },
-        "comparison_item_bcR9N4": {
+        "comparison_item_bKKanx": {
           "type": "comparison_item",
           "settings": {
             "joga_feature": "",
             "competitor_feature": ""
           }
         },
-        "comparison_item_njXPGj": {
+        "comparison_item_NRqXnE": {
+          "type": "comparison_item",
+          "settings": {
+            "joga_feature": "",
+            "competitor_feature": ""
+          }
+        },
+        "comparison_item_rbPUDN": {
           "type": "comparison_item",
           "settings": {
             "joga_feature": "",
@@ -880,17 +880,16 @@
         }
       },
       "block_order": [
-        "comparison_item_wUFQhw",
-        "comparison_item_d6JJbk",
-        "comparison_item_bcR9N4",
-        "comparison_item_njXPGj"
+        "comparison_item_LqeVUe",
+        "comparison_item_bKKanx",
+        "comparison_item_NRqXnE",
+        "comparison_item_rbPUDN"
       ],
       "settings": {
         "title": "How do we compare?",
         "subtitle": "WHY JOGA?",
         "player_image": "shopify:\/\/shop_images\/Chico.webp",
-        "shinpad_icon": "shopify:\/\/shop_images\/03_Can.webp",
-        "athletes_image": "shopify:\/\/shop_images\/BanneCan.webp"
+        "shinpad_icon": "shopify:\/\/shop_images\/Canilller.webp"
       }
     }
   },
@@ -907,6 +906,6 @@
     "d2d3417b-e92f-428c-b221-5bceffb552be",
     "icon_bar_ztfr6X",
     "comparisontable_dPczcn",
-    "tablacomparativa_9ryMce"
+    "tablacomparativa_F64Xgf"
   ]
 }
