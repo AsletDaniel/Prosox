@@ -749,7 +749,7 @@
         "atc_product": "",
         "atc_skip_cart": false,
         "color_scheme": "background-1",
-        "layout": "table_second",
+        "layout": "table_first",
         "style": "centered",
         "us_label": "[shop_name]",
         "us_label_size": 18,
