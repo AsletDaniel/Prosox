@@ -608,6 +608,93 @@
         "item_gap": 0
       }
     },
+    "d2d3417b-e92f-428c-b221-5bceffb552be": {
+      "type": "comparison-table",
+      "blocks": {
+        "template--21507361505575__d2d3417b-e92f-428c-b221-5bceffb552be-row-1": {
+          "type": "row",
+          "settings": {
+            "benefit": "Preferidos por +350 profesionales",
+            "us": true,
+            "others": false
+          }
+        },
+        "template--21507361505575__d2d3417b-e92f-428c-b221-5bceffb552be-row-2": {
+          "type": "row",
+          "settings": {
+            "benefit": "+4 años de trayectoria",
+            "us": true,
+            "others": false
+          }
+        },
+        "template--21507361505575__d2d3417b-e92f-428c-b221-5bceffb552be-row-3": {
+          "type": "row",
+          "settings": {
+            "benefit": "+20.000 clientes satisfechos",
+            "us": true,
+            "others": false
+          }
+        }
+      },
+      "block_order": [
+        "template--21507361505575__d2d3417b-e92f-428c-b221-5bceffb552be-row-1",
+        "template--21507361505575__d2d3417b-e92f-428c-b221-5bceffb552be-row-2",
+        "template--21507361505575__d2d3417b-e92f-428c-b221-5bceffb552be-row-3"
+      ],
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "title": "¿PORQUE PROSOX?",
+        "title_highlight_color": "#6d388b",
+        "heading_size": "h0",
+        "text": "<h3>Somos la marca #1 de los futbolistas colombianos<\/h3>",
+        "button_label": "COMPRALAS AHORA",
+        "link": "shopify:\/\/products\/mini-canilleras-prosox",
+        "button_style_secondary": false,
+        "atc_button_label": "",
+        "atc_product": "",
+        "atc_skip_cart": false,
+        "color_scheme": "background-1",
+        "layout": "table_first",
+        "style": "centered",
+        "us_label": "[shop_name]",
+        "us_label_size": 18,
+        "logo": "shopify:\/\/shop_images\/Chico.webp",
+        "logo_width": 150,
+        "mobile_logo_width": 60,
+        "others_label": "Otros",
+        "others_label_size": 18,
+        "others_logo": "shopify:\/\/shop_images\/Canilller.webp",
+        "others_logo_width": 90,
+        "others_mobile_logo_width": 60,
+        "checkmark_style": "regular",
+        "checkmark_color": "#ffffff",
+        "checkmark_bg_color": "#53af01",
+        "x_style": "solid",
+        "x_color": "#121212",
+        "x_bg_color": "#dbdbdb",
+        "opposite_icon_colors": "original",
+        "highlighted_color_scheme": "accent-1",
+        "highlighted_separator_opacity": 0,
+        "highlighted_overlay_opacity": 0,
+        "other_cells_color_scheme": "background-1",
+        "regular_separator_opacity": 10,
+        "regular_overlay_opacity": 0,
+        "minimalistic_border_opacity": 16,
+        "padding_top": 0,
+        "padding_bottom": 36,
+        "custom_colors_background": "#ffffff",
+        "custom_gradient_background": "",
+        "custom_colors_text": "#2e2a39",
+        "custom_colors_solid_button_background": "#dd1d1d",
+        "custom_colors_solid_button_text": "#ffffff",
+        "custom_colors_outline_button": "#dd1d1d",
+        "custom_colors_highlighted_background": "#2e2a39",
+        "custom_colors_highlighted_text": "#ffffff",
+        "custom_colors_others_background": "#ffffff",
+        "custom_colors_others_text": "#2e2a39"
+      }
+    },
     "icon_bar_ztfr6X": {
       "type": "icon-bar",
       "blocks": {
@@ -701,150 +788,6 @@
         "custom_cards_gradient_background": "",
         "custom_cards_colors_text": "#2e2a39"
       }
-    },
-    "d2d3417b-e92f-428c-b221-5bceffb552be": {
-      "type": "comparison-table",
-      "blocks": {
-        "template--21507361505575__d2d3417b-e92f-428c-b221-5bceffb552be-row-1": {
-          "type": "row",
-          "settings": {
-            "benefit": "Preferidos por +350 profesionales",
-            "us": true,
-            "others": false
-          }
-        },
-        "template--21507361505575__d2d3417b-e92f-428c-b221-5bceffb552be-row-2": {
-          "type": "row",
-          "settings": {
-            "benefit": "+4 años de trayectoria",
-            "us": true,
-            "others": false
-          }
-        },
-        "template--21507361505575__d2d3417b-e92f-428c-b221-5bceffb552be-row-3": {
-          "type": "row",
-          "settings": {
-            "benefit": "+20.000 clientes satisfechos",
-            "us": true,
-            "others": false
-          }
-        }
-      },
-      "block_order": [
-        "template--21507361505575__d2d3417b-e92f-428c-b221-5bceffb552be-row-1",
-        "template--21507361505575__d2d3417b-e92f-428c-b221-5bceffb552be-row-2",
-        "template--21507361505575__d2d3417b-e92f-428c-b221-5bceffb552be-row-3"
-      ],
-      "settings": {
-        "display_id": false,
-        "visibility": "always-display",
-        "title": "¿PORQUE PROSOX?",
-        "title_highlight_color": "#6d388b",
-        "heading_size": "h0",
-        "text": "<h3>Somos la marca #1 de los futbolistas colombianos<\/h3>",
-        "button_label": "COMPRALAS AHORA",
-        "link": "shopify:\/\/products\/mini-canilleras-prosox",
-        "button_style_secondary": false,
-        "atc_button_label": "",
-        "atc_product": "",
-        "atc_skip_cart": false,
-        "color_scheme": "background-1",
-        "layout": "table_first",
-        "style": "centered",
-        "us_label": "[shop_name]",
-        "us_label_size": 18,
-        "logo": "shopify:\/\/shop_images\/Chico.webp",
-        "logo_width": 150,
-        "mobile_logo_width": 60,
-        "others_label": "Otros",
-        "others_label_size": 18,
-        "others_logo": "shopify:\/\/shop_images\/Canilller.webp",
-        "others_logo_width": 90,
-        "others_mobile_logo_width": 60,
-        "checkmark_style": "regular",
-        "checkmark_color": "#ffffff",
-        "checkmark_bg_color": "#53af01",
-        "x_style": "solid",
-        "x_color": "#121212",
-        "x_bg_color": "#dbdbdb",
-        "opposite_icon_colors": "original",
-        "highlighted_color_scheme": "accent-1",
-        "highlighted_separator_opacity": 0,
-        "highlighted_overlay_opacity": 0,
-        "other_cells_color_scheme": "background-1",
-        "regular_separator_opacity": 10,
-        "regular_overlay_opacity": 0,
-        "minimalistic_border_opacity": 16,
-        "padding_top": 0,
-        "padding_bottom": 36,
-        "custom_colors_background": "#ffffff",
-        "custom_gradient_background": "",
-        "custom_colors_text": "#2e2a39",
-        "custom_colors_solid_button_background": "#dd1d1d",
-        "custom_colors_solid_button_text": "#ffffff",
-        "custom_colors_outline_button": "#dd1d1d",
-        "custom_colors_highlighted_background": "#2e2a39",
-        "custom_colors_highlighted_text": "#ffffff",
-        "custom_colors_others_background": "#ffffff",
-        "custom_colors_others_text": "#2e2a39"
-      }
-    },
-    "comparisontable_dPczcn": {
-      "type": "Comparisontable",
-      "blocks": {
-        "comparison_item_GjBHit": {
-          "type": "comparison_item",
-          "settings": {
-            "joga_icon": "shopify:\/\/shop_images\/1.svg",
-            "joga_feature": "Compact Shinpads for Optimal Mobility",
-            "competitor_icon": "shopify:\/\/shop_images\/Diseno_sin_titulo_1.svg",
-            "competitor_feature": "Clunky Design, Reduced Mobility"
-          }
-        },
-        "comparison_item_cmVWLQ": {
-          "type": "comparison_item",
-          "settings": {
-            "joga_icon": "shopify:\/\/shop_images\/1.svg",
-            "joga_feature": "Compact Shinpads for Optimal Mobility",
-            "competitor_icon": "shopify:\/\/shop_images\/Diseno_sin_titulo_1.svg",
-            "competitor_feature": "Clunky Design, Reduced Mobility"
-          }
-        },
-        "comparison_item_PXVJ9a": {
-          "type": "comparison_item",
-          "settings": {
-            "joga_icon": "shopify:\/\/shop_images\/1.svg",
-            "joga_feature": "Compact Shinpads for Optimal Mobility",
-            "competitor_icon": "shopify:\/\/shop_images\/Diseno_sin_titulo_1.svg",
-            "competitor_feature": "Clunky Design, Reduced Mobility"
-          }
-        },
-        "comparison_item_DiMmeC": {
-          "type": "comparison_item",
-          "settings": {
-            "joga_icon": "shopify:\/\/shop_images\/1.svg",
-            "joga_feature": "Compact Shinpads for Optimal Mobility",
-            "competitor_icon": "shopify:\/\/shop_images\/Diseno_sin_titulo_1.svg",
-            "competitor_feature": "Clunky Design, Reduced Mobility"
-          }
-        }
-      },
-      "block_order": [
-        "comparison_item_GjBHit",
-        "comparison_item_cmVWLQ",
-        "comparison_item_PXVJ9a",
-        "comparison_item_DiMmeC"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "WHY JOGA?",
-        "title_color": "#ffffff",
-        "highlight_color": "#ffff00",
-        "background_color": "#000000",
-        "joga_main_image": "shopify:\/\/shop_images\/Chico.webp",
-        "competitor_main_image": "shopify:\/\/shop_images\/Canilller.webp",
-        "additional_image": "shopify:\/\/shop_images\/BanneCan.webp"
-      }
     }
   },
   "order": [
@@ -857,8 +800,7 @@
     "featured_product_dQyfhy",
     "image_slider_jcTRET",
     "estadisticas_JUNmDH",
-    "icon_bar_ztfr6X",
     "d2d3417b-e92f-428c-b221-5bceffb552be",
-    "comparisontable_dPczcn"
+    "icon_bar_ztfr6X"
   ]
 }
