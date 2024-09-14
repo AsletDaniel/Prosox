@@ -853,8 +853,8 @@
         "comparison_item_wUFQhw": {
           "type": "comparison_item",
           "settings": {
-            "joga_feature": "",
-            "competitor_feature": ""
+            "joga_feature": "tetetete",
+            "competitor_feature": "tetetete"
           }
         },
         "comparison_item_d6JJbk": {
@@ -889,7 +889,7 @@
         "title": "How do we compare?",
         "subtitle": "WHY JOGA?",
         "player_image": "shopify:\/\/shop_images\/Chico.webp",
-        "shinpad_icon": "shopify:\/\/shop_images\/Canilller.webp",
+        "shinpad_icon": "shopify:\/\/shop_images\/03_Can.webp",
         "athletes_image": "shopify:\/\/shop_images\/BanneCan.webp"
       }
     }
