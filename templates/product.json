@@ -185,6 +185,21 @@
             "margin_bottom": 24
           }
         },
+        "complementary_q9wApK": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "Pairs well with",
+            "make_collapsible_row": false,
+            "icon": "price_tag",
+            "product_list_limit": 10,
+            "products_per_page": 3,
+            "pagination_style": "counter",
+            "image_ratio": "square",
+            "enable_quick_add": false,
+            "margin_top": 15,
+            "margin_bottom": 15
+          }
+        },
         "custom_liquid_ahzTA8": {
           "type": "custom_liquid",
           "settings": {
@@ -333,6 +348,7 @@
         "5fcc0428-e768-4cb7-bea3-eb0274198dd1",
         "icon_with_text_4bNJPg",
         "buy_buttons",
+        "complementary_q9wApK",
         "custom_liquid_ahzTA8",
         "urgency_9VpFqK",
         "collapsible_tab_8DPzUK",
