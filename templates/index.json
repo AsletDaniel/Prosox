@@ -16,7 +16,7 @@
         "background_color": "#000000",
         "text_color": "#ffffff",
         "countdown_color": "#ff0000",
-        "end_date": "2024-09-15T00:00:00",
+        "end_date": "2024-09-29T00:00:00",
         "item_gap": 5,
         "mobile_padding_top": 0,
         "mobile_padding_bottom": 0,
@@ -30,7 +30,7 @@
       "settings": {
         "display_id": false,
         "visibility": "always-display",
-        "custom_liquid": "<div class=\"hero-section\">\n    <div class=\"gradient-overlay\"><\/div>\n    <div class=\"text-content\">\n        <h1>LLEVA AL MAXIMO TU RENDIMIENTO<\/h1>\n        <p><span class=\"icon\">★ ★ ★ ★ ★<\/span> OVER 100,000+ HAPPY CUSTOMERS<\/p>\n        <p>Joga has helped over 100,000+ footballers improve their speed, agility and comfort on the pitch.<\/p>\n        <a href=\"#\" class=\"shop-button\">Shop Best Sellers<\/a>\n    <\/div>\n    <!-- Columna 1 -->\n    <div id=\"column1\" class=\"column large\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0684\/3639\/4200\/files\/3_a35dff70-c4f6-454b-abf8-0888b2308693.png?v=1725345107\" alt=\"Image 1\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0684\/3639\/4200\/files\/1.png?v=1725345108\" alt=\"Image 2\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0684\/3639\/4200\/files\/2_e5baada1-88bc-481a-8aa2-591e1d93a762.png?v=1725345108\" alt=\"Image 3\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0684\/3639\/4200\/files\/3_a35dff70-c4f6-454b-abf8-0888b2308693.png?v=1725345107\" alt=\"Image 4\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0684\/3639\/4200\/files\/1.png?v=1725345108\" alt=\"Image 5\">\n    <\/div>\n    <!-- Columna 2 -->\n    <div id=\"column2\" class=\"column small\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0684\/3639\/4200\/files\/1_719381d3-e8c1-479f-b36f-db5a287e16ab.png?v=1725345111\" alt=\"Image 6\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0684\/3639\/4200\/files\/2_89d7f6a5-ee5d-475e-a67a-c6d7ded2f6b4.png?v=1725345111\" alt=\"Image 7\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0684\/3639\/4200\/files\/1_719381d3-e8c1-479f-b36f-db5a287e16ab.png?v=1725345111\" alt=\"Image 8\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0684\/3639\/4200\/files\/2_89d7f6a5-ee5d-475e-a67a-c6d7ded2f6b4.png?v=1725345111\" alt=\"Image 9\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0684\/3639\/4200\/files\/1_719381d3-e8c1-479f-b36f-db5a287e16ab.png?v=1725345111\" alt=\"Image 10\">\n    <\/div>\n    <!-- Columna 3 -->\n    <div id=\"column3\" class=\"column large\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0684\/3639\/4200\/files\/3_a35dff70-c4f6-454b-abf8-0888b2308693.png?v=1725345107\" alt=\"Image 11\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0684\/3639\/4200\/files\/1.png?v=1725345108\" alt=\"Image 12\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0684\/3639\/4200\/files\/2_e5baada1-88bc-481a-8aa2-591e1d93a762.png?v=1725345108\" alt=\"Image 13\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0684\/3639\/4200\/files\/3_a35dff70-c4f6-454b-abf8-0888b2308693.png?v=1725345107\" alt=\"Image 14\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0684\/3639\/4200\/files\/1.png?v=1725345108\" alt=\"Image 15\">\n    <\/div>\n    <!-- Columna 4 -->\n    <div id=\"column4\" class=\"column small\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0684\/3639\/4200\/files\/2_89d7f6a5-ee5d-475e-a67a-c6d7ded2f6b4.png?v=1725345111\" alt=\"Image 16\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0684\/3639\/4200\/files\/1_719381d3-e8c1-479f-b36f-db5a287e16ab.png?v=1725345111\" alt=\"Image 17\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0684\/3639\/4200\/files\/2_89d7f6a5-ee5d-475e-a67a-c6d7ded2f6b4.png?v=1725345111\" alt=\"Image 18\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0684\/3639\/4200\/files\/1_719381d3-e8c1-479f-b36f-db5a287e16ab.png?v=1725345111\" alt=\"Image 19\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0684\/3639\/4200\/files\/2_89d7f6a5-ee5d-475e-a67a-c6d7ded2f6b4.png?v=1725345111\" alt=\"Image 20\">\n    <\/div>\n    <!-- Columna 5 -->\n    <div id=\"column5\" class=\"column small\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0684\/3639\/4200\/files\/1_719381d3-e8c1-479f-b36f-db5a287e16ab.png?v=1725345111\" alt=\"Image 21\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0684\/3639\/4200\/files\/2_89d7f6a5-ee5d-475e-a67a-c6d7ded2f6b4.png?v=1725345111\" alt=\"Image 22\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0684\/3639\/4200\/files\/1_719381d3-e8c1-479f-b36f-db5a287e16ab.png?v=1725345111\" alt=\"Image 23\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0684\/3639\/4200\/files\/2_89d7f6a5-ee5d-475e-a67a-c6d7ded2f6b4.png?v=1725345111\" alt=\"Image 24\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0684\/3639\/4200\/files\/1_719381d3-e8c1-479f-b36f-db5a287e16ab.png?v=1725345111\" alt=\"Image 25\">\n    <\/div>\n<\/div>\n\n\n<style>\n.hero-section {\n    position: relative; \/* Necesario para posicionar el degradado y el texto *\/\n    display: flex;\n    gap: 2px; \/* Espacio entre columnas *\/\n    width: 100vw; \/* Asegura que el ancho de la sección abarque toda la pantalla *\/\n    height: 100vh; \/* La altura de la sección abarca toda la pantalla *\/\n    overflow: hidden;\n    justify-content: space-between; \/* Distribuye las columnas uniformemente *\/\n}\n\n.gradient-overlay {\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    width: 100%;\n    height: 30%; \/* Ajusta la altura del degradado *\/\n    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)); \n    pointer-events: none; \/* Permite que los clics pasen a través del degradado *\/\n    z-index: 1; \/* Asegura que el degradado esté encima de las imágenes pero debajo del texto *\/\n}\n\n.text-content {\n    position: absolute;\n    bottom: 20px; \/* Ajusta la posición del texto *\/\n    left: 20px;\n    color: white;\n    z-index: 2;\n}\n\n.text-content h1 {\n    font-size: 3rem; \/* Ajusta el tamaño del texto *\/\n    margin: 0;\n}\n\n.text-content p {\n    font-size: 1.2rem; \/* Ajusta el tamaño del texto *\/\n    margin: 5px 0;\n}\n\n.text-content .icon {\n    display: inline-block;\n    margin-right: 10px;\n}\n\n.text-content .shop-button {\n    display: inline-block;\n    margin-top: 10px;\n    padding: 10px 20px;\n    background-color: yellow;\n    color: black;\n    text-decoration: none;\n    font-weight: bold;\n    border-radius: 5px;\n    z-index: 3; \/* Para asegurarse de que el botón esté encima de todo *\/\n}\n\n.column {\n    display: flex;\n    flex-direction: column;\n    gap: 2px; \/* Espacio entre filas *\/\n    flex-grow: 1; \/* Asegura que las columnas ocupen todo el espacio disponible *\/\n    height: 100%;\n    overflow: hidden;\n}\n\n.column img {\n    width: 100%; \/* Asegura que la imagen ocupe todo el ancho de su contenedor *\/\n    border-radius: 10px;\n    box-shadow: 0px 0px 10px 0px rgba(214, 239, 67, 0.17);\n    object-fit: cover;\n}\n\n\/* Tamaño de imágenes grandes en escritorio *\/\n.large img {\n    height: 100%; \/* Asegura que la imagen ocupe toda la altura disponible en su columna *\/\n    max-height: 585px; \/* Altura máxima de las imágenes grandes *\/\n}\n\n\/* Tamaño de imágenes pequeñas en escritorio *\/\n.small img {\n    height: 100%; \/* Asegura que la imagen ocupe toda la altura disponible en su columna *\/\n    max-height: 316px; \/* Altura máxima de las imágenes pequeñas *\/\n}\n\n\/* Animación hacia arriba (scrolling up) *\/\n@keyframes scrollUp {\n    0% {\n        transform: translateY(0);\n    }\n    100% {\n        transform: translateY(-100%);\n    }\n}\n\n\/* Animación hacia abajo corregida (scrolling down) *\/\n@keyframes scrollDown {\n    0% {\n        transform: translateY(-100%); \/* Comienza fuera de la pantalla *\/\n    }\n    100% {\n        transform: translateY(0); \/* Desciende hasta llenar la pantalla *\/\n    }\n}\n\n\/* Asignar animaciones a columnas específicas *\/\n#column1 img {\n    animation: scrollUp 10s infinite linear;\n}\n\n#column2 img {\n    animation: scrollDown 10s infinite linear;\n}\n\n#column3 img {\n    animation: scrollUp 10s infinite linear;\n}\n\n#column4 img {\n    animation: scrollDown 10s infinite linear;\n}\n\n#column5 img {\n    animation: scrollUp 10s infinite linear;\n}\n\n\/* Estilos responsivos para dispositivos móviles *\/\n@media only screen and (max-width: 768px) {\n    .hero-section {\n        flex-wrap: wrap; \/* Permite que las columnas se ajusten en líneas *\/\n        height: auto; \/* Permite que la altura se ajuste automáticamente *\/\n        width: 100vw; \/* Asegura que el ancho de la sección abarque toda la pantalla *\/\n        max-height: 100vh; \/* Limita la altura de la sección al 100% de la altura de la pantalla *\/\n        overflow: hidden; \/* Oculta cualquier contenido que exceda la altura máxima *\/\n    }\n\n    .column {\n        width: 48%; \/* Dos columnas en móviles, ocupando el 48% cada una *\/\n    }\n\n    \/* Todas las imágenes se ajustan al tamaño pequeño en móviles *\/\n    .column img {\n        height: 316px;\n        width: 100%;\n    }\n\n    \/* Ajustar animaciones para móviles *\/\n    #column1 img,\n    #column3 img,\n    #column5 img {\n        animation: scrollUpMobile 15s infinite linear;\n    }\n\n    #column2 img,\n    #column4 img {\n        animation: scrollDownMobile 15s infinite linear;\n    }\n}\n\n@keyframes scrollUpMobile {\n    0% {\n        transform: translateY(0);\n    }\n    100% {\n        transform: translateY(-100%);\n    }\n}\n\n@keyframes scrollDownMobile {\n    0% {\n        transform: translateY(-100%);\n    }\n    100% {\n        transform: translateY(0);\n    }\n}\n<\/style>",
+        "custom_liquid": "<div class=\"hero-section\">\n    <div class=\"gradient-overlay\"></div>\n    <div class=\"text-content\">\n        <h1>LLEVA AL MAXIMO TU RENDIMIENTO</h1>\n        <p><span class=\"icon\">★ ★ ★ ★ ★</span> OVER 100,000+ HAPPY CUSTOMERS</p>\n        <p>Joga has helped over 100,000+ footballers improve their speed, agility and comfort on the pitch.</p>\n        <a href=\"#\" class=\"shop-button\">Shop Best Sellers</a>\n    </div>\n    <!-- Columna 1 -->\n    <div id=\"column1\" class=\"column large\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0684/3639/4200/files/3_a35dff70-c4f6-454b-abf8-0888b2308693.png?v=1725345107\" alt=\"Image 1\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0684/3639/4200/files/1.png?v=1725345108\" alt=\"Image 2\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0684/3639/4200/files/2_e5baada1-88bc-481a-8aa2-591e1d93a762.png?v=1725345108\" alt=\"Image 3\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0684/3639/4200/files/3_a35dff70-c4f6-454b-abf8-0888b2308693.png?v=1725345107\" alt=\"Image 4\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0684/3639/4200/files/1.png?v=1725345108\" alt=\"Image 5\">\n    </div>\n    <!-- Columna 2 -->\n    <div id=\"column2\" class=\"column small\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0684/3639/4200/files/1_719381d3-e8c1-479f-b36f-db5a287e16ab.png?v=1725345111\" alt=\"Image 6\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0684/3639/4200/files/2_89d7f6a5-ee5d-475e-a67a-c6d7ded2f6b4.png?v=1725345111\" alt=\"Image 7\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0684/3639/4200/files/1_719381d3-e8c1-479f-b36f-db5a287e16ab.png?v=1725345111\" alt=\"Image 8\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0684/3639/4200/files/2_89d7f6a5-ee5d-475e-a67a-c6d7ded2f6b4.png?v=1725345111\" alt=\"Image 9\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0684/3639/4200/files/1_719381d3-e8c1-479f-b36f-db5a287e16ab.png?v=1725345111\" alt=\"Image 10\">\n    </div>\n    <!-- Columna 3 -->\n    <div id=\"column3\" class=\"column large\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0684/3639/4200/files/3_a35dff70-c4f6-454b-abf8-0888b2308693.png?v=1725345107\" alt=\"Image 11\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0684/3639/4200/files/1.png?v=1725345108\" alt=\"Image 12\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0684/3639/4200/files/2_e5baada1-88bc-481a-8aa2-591e1d93a762.png?v=1725345108\" alt=\"Image 13\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0684/3639/4200/files/3_a35dff70-c4f6-454b-abf8-0888b2308693.png?v=1725345107\" alt=\"Image 14\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0684/3639/4200/files/1.png?v=1725345108\" alt=\"Image 15\">\n    </div>\n    <!-- Columna 4 -->\n    <div id=\"column4\" class=\"column small\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0684/3639/4200/files/2_89d7f6a5-ee5d-475e-a67a-c6d7ded2f6b4.png?v=1725345111\" alt=\"Image 16\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0684/3639/4200/files/1_719381d3-e8c1-479f-b36f-db5a287e16ab.png?v=1725345111\" alt=\"Image 17\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0684/3639/4200/files/2_89d7f6a5-ee5d-475e-a67a-c6d7ded2f6b4.png?v=1725345111\" alt=\"Image 18\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0684/3639/4200/files/1_719381d3-e8c1-479f-b36f-db5a287e16ab.png?v=1725345111\" alt=\"Image 19\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0684/3639/4200/files/2_89d7f6a5-ee5d-475e-a67a-c6d7ded2f6b4.png?v=1725345111\" alt=\"Image 20\">\n    </div>\n    <!-- Columna 5 -->\n    <div id=\"column5\" class=\"column small\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0684/3639/4200/files/1_719381d3-e8c1-479f-b36f-db5a287e16ab.png?v=1725345111\" alt=\"Image 21\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0684/3639/4200/files/2_89d7f6a5-ee5d-475e-a67a-c6d7ded2f6b4.png?v=1725345111\" alt=\"Image 22\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0684/3639/4200/files/1_719381d3-e8c1-479f-b36f-db5a287e16ab.png?v=1725345111\" alt=\"Image 23\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0684/3639/4200/files/2_89d7f6a5-ee5d-475e-a67a-c6d7ded2f6b4.png?v=1725345111\" alt=\"Image 24\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0684/3639/4200/files/1_719381d3-e8c1-479f-b36f-db5a287e16ab.png?v=1725345111\" alt=\"Image 25\">\n    </div>\n</div>\n\n\n<style>\n.hero-section {\n    position: relative; /* Necesario para posicionar el degradado y el texto */\n    display: flex;\n    gap: 2px; /* Espacio entre columnas */\n    width: 100vw; /* Asegura que el ancho de la sección abarque toda la pantalla */\n    height: 100vh; /* La altura de la sección abarca toda la pantalla */\n    overflow: hidden;\n    justify-content: space-between; /* Distribuye las columnas uniformemente */\n}\n\n.gradient-overlay {\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    width: 100%;\n    height: 30%; /* Ajusta la altura del degradado */\n    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)); \n    pointer-events: none; /* Permite que los clics pasen a través del degradado */\n    z-index: 1; /* Asegura que el degradado esté encima de las imágenes pero debajo del texto */\n}\n\n.text-content {\n    position: absolute;\n    bottom: 20px; /* Ajusta la posición del texto */\n    left: 20px;\n    color: white;\n    z-index: 2;\n}\n\n.text-content h1 {\n    font-size: 3rem; /* Ajusta el tamaño del texto */\n    margin: 0;\n}\n\n.text-content p {\n    font-size: 1.2rem; /* Ajusta el tamaño del texto */\n    margin: 5px 0;\n}\n\n.text-content .icon {\n    display: inline-block;\n    margin-right: 10px;\n}\n\n.text-content .shop-button {\n    display: inline-block;\n    margin-top: 10px;\n    padding: 10px 20px;\n    background-color: yellow;\n    color: black;\n    text-decoration: none;\n    font-weight: bold;\n    border-radius: 5px;\n    z-index: 3; /* Para asegurarse de que el botón esté encima de todo */\n}\n\n.column {\n    display: flex;\n    flex-direction: column;\n    gap: 2px; /* Espacio entre filas */\n    flex-grow: 1; /* Asegura que las columnas ocupen todo el espacio disponible */\n    height: 100%;\n    overflow: hidden;\n}\n\n.column img {\n    width: 100%; /* Asegura que la imagen ocupe todo el ancho de su contenedor */\n    border-radius: 10px;\n    box-shadow: 0px 0px 10px 0px rgba(214, 239, 67, 0.17);\n    object-fit: cover;\n}\n\n/* Tamaño de imágenes grandes en escritorio */\n.large img {\n    height: 100%; /* Asegura que la imagen ocupe toda la altura disponible en su columna */\n    max-height: 585px; /* Altura máxima de las imágenes grandes */\n}\n\n/* Tamaño de imágenes pequeñas en escritorio */\n.small img {\n    height: 100%; /* Asegura que la imagen ocupe toda la altura disponible en su columna */\n    max-height: 316px; /* Altura máxima de las imágenes pequeñas */\n}\n\n/* Animación hacia arriba (scrolling up) */\n@keyframes scrollUp {\n    0% {\n        transform: translateY(0);\n    }\n    100% {\n        transform: translateY(-100%);\n    }\n}\n\n/* Animación hacia abajo corregida (scrolling down) */\n@keyframes scrollDown {\n    0% {\n        transform: translateY(-100%); /* Comienza fuera de la pantalla */\n    }\n    100% {\n        transform: translateY(0); /* Desciende hasta llenar la pantalla */\n    }\n}\n\n/* Asignar animaciones a columnas específicas */\n#column1 img {\n    animation: scrollUp 10s infinite linear;\n}\n\n#column2 img {\n    animation: scrollDown 10s infinite linear;\n}\n\n#column3 img {\n    animation: scrollUp 10s infinite linear;\n}\n\n#column4 img {\n    animation: scrollDown 10s infinite linear;\n}\n\n#column5 img {\n    animation: scrollUp 10s infinite linear;\n}\n\n/* Estilos responsivos para dispositivos móviles */\n@media only screen and (max-width: 768px) {\n    .hero-section {\n        flex-wrap: wrap; /* Permite que las columnas se ajusten en líneas */\n        height: auto; /* Permite que la altura se ajuste automáticamente */\n        width: 100vw; /* Asegura que el ancho de la sección abarque toda la pantalla */\n        max-height: 100vh; /* Limita la altura de la sección al 100% de la altura de la pantalla */\n        overflow: hidden; /* Oculta cualquier contenido que exceda la altura máxima */\n    }\n\n    .column {\n        width: 48%; /* Dos columnas en móviles, ocupando el 48% cada una */\n    }\n\n    /* Todas las imágenes se ajustan al tamaño pequeño en móviles */\n    .column img {\n        height: 316px;\n        width: 100%;\n    }\n\n    /* Ajustar animaciones para móviles */\n    #column1 img,\n    #column3 img,\n    #column5 img {\n        animation: scrollUpMobile 15s infinite linear;\n    }\n\n    #column2 img,\n    #column4 img {\n        animation: scrollDownMobile 15s infinite linear;\n    }\n}\n\n@keyframes scrollUpMobile {\n    0% {\n        transform: translateY(0);\n    }\n    100% {\n        transform: translateY(-100%);\n    }\n}\n\n@keyframes scrollDownMobile {\n    0% {\n        transform: translateY(-100%);\n    }\n    100% {\n        transform: translateY(0);\n    }\n}\n</style>",
         "color_scheme": "inverse",
         "padding_top": 0,
         "padding_bottom": 0
@@ -42,151 +42,151 @@
         "slider_1_bDpKLp": {
           "type": "slider-1",
           "settings": {
-            "slider_1_image": "shopify:\/\/shop_images\/Bann_Prx_1.webp"
+            "slider_1_image": "shopify://shop_images/Bann_Prx_1.webp"
           }
         },
         "slider_1_8crVkQ": {
           "type": "slider-1",
           "settings": {
-            "slider_1_image": "shopify:\/\/shop_images\/Bann_Prx_2.webp"
+            "slider_1_image": "shopify://shop_images/Bann_Prx_2.webp"
           }
         },
         "slider_1_mjrPRa": {
           "type": "slider-1",
           "settings": {
-            "slider_1_image": "shopify:\/\/shop_images\/Bann_Prx_3.webp"
+            "slider_1_image": "shopify://shop_images/Bann_Prx_3.webp"
           }
         },
         "slider_1_7yYNHX": {
           "type": "slider-1",
           "settings": {
-            "slider_1_image": "shopify:\/\/shop_images\/Bann_Prx.webp"
+            "slider_1_image": "shopify://shop_images/Bann_Prx.webp"
           }
         },
         "slider_1_iYFV9A": {
           "type": "slider-1",
           "settings": {
-            "slider_1_image": "shopify:\/\/shop_images\/Bann_Prx_4.webp"
+            "slider_1_image": "shopify://shop_images/Bann_Prx_4.webp"
           }
         },
         "slider_2_fRtUrj": {
           "type": "slider-2",
           "settings": {
-            "slider_2_image": "shopify:\/\/shop_images\/Bann_Prx_8.webp"
+            "slider_2_image": "shopify://shop_images/Bann_Prx_8.webp"
           }
         },
         "slider_2_jNnGmF": {
           "type": "slider-2",
           "settings": {
-            "slider_2_image": "shopify:\/\/shop_images\/Bann_Prx_5.webp"
+            "slider_2_image": "shopify://shop_images/Bann_Prx_5.webp"
           }
         },
         "slider_2_Kq8pY4": {
           "type": "slider-2",
           "settings": {
-            "slider_2_image": "shopify:\/\/shop_images\/Bann_Prx_9.webp"
+            "slider_2_image": "shopify://shop_images/Bann_Prx_9.webp"
           }
         },
         "slider_2_jJmMPM": {
           "type": "slider-2",
           "settings": {
-            "slider_2_image": "shopify:\/\/shop_images\/Bann_Prx_4.webp"
+            "slider_2_image": "shopify://shop_images/Bann_Prx_4.webp"
           }
         },
         "slider_2_J9jJb3": {
           "type": "slider-2",
           "settings": {
-            "slider_2_image": "shopify:\/\/shop_images\/Bann_Prx_9.webp"
+            "slider_2_image": "shopify://shop_images/Bann_Prx_9.webp"
           }
         },
         "slider_3_fnygPb": {
           "type": "slider-3",
           "settings": {
-            "slider_3_image": "shopify:\/\/shop_images\/Bann_Prx_3.webp"
+            "slider_3_image": "shopify://shop_images/Bann_Prx_3.webp"
           }
         },
         "slider_3_cUMB9D": {
           "type": "slider-3",
           "settings": {
-            "slider_3_image": "shopify:\/\/shop_images\/Bann_Prx.webp"
+            "slider_3_image": "shopify://shop_images/Bann_Prx.webp"
           }
         },
         "slider_3_wjNH9T": {
           "type": "slider-3",
           "settings": {
-            "slider_3_image": "shopify:\/\/shop_images\/Bann_Prx_2.webp"
+            "slider_3_image": "shopify://shop_images/Bann_Prx_2.webp"
           }
         },
         "slider_3_aXpPHP": {
           "type": "slider-3",
           "settings": {
-            "slider_3_image": "shopify:\/\/shop_images\/Bann_Prx.webp"
+            "slider_3_image": "shopify://shop_images/Bann_Prx.webp"
           }
         },
         "slider_3_F9E8iJ": {
           "type": "slider-3",
           "settings": {
-            "slider_3_image": "shopify:\/\/shop_images\/Bann_Prx_4.webp"
+            "slider_3_image": "shopify://shop_images/Bann_Prx_4.webp"
           }
         },
         "slider_4_RwUahG": {
           "type": "slider-4",
           "settings": {
-            "slider_4_image": "shopify:\/\/shop_images\/Bann_Prx_7.webp"
+            "slider_4_image": "shopify://shop_images/Bann_Prx_7.webp"
           }
         },
         "slider_4_7LEmwy": {
           "type": "slider-4",
           "settings": {
-            "slider_4_image": "shopify:\/\/shop_images\/Bann_Prx_4.webp"
+            "slider_4_image": "shopify://shop_images/Bann_Prx_4.webp"
           }
         },
         "slider_4_pykHhm": {
           "type": "slider-4",
           "settings": {
-            "slider_4_image": "shopify:\/\/shop_images\/Bann_Prx_6.webp"
+            "slider_4_image": "shopify://shop_images/Bann_Prx_6.webp"
           }
         },
         "slider_4_zk8izj": {
           "type": "slider-4",
           "settings": {
-            "slider_4_image": "shopify:\/\/shop_images\/Bann_Prx_9.webp"
+            "slider_4_image": "shopify://shop_images/Bann_Prx_9.webp"
           }
         },
         "slider_4_7dCDxb": {
           "type": "slider-4",
           "settings": {
-            "slider_4_image": "shopify:\/\/shop_images\/Bann_Prx_8.webp"
+            "slider_4_image": "shopify://shop_images/Bann_Prx_8.webp"
           }
         },
         "slider_5_kgKGrk": {
           "type": "slider-5",
           "settings": {
-            "slider_5_image": "shopify:\/\/shop_images\/Bann_Prx_5.webp"
+            "slider_5_image": "shopify://shop_images/Bann_Prx_5.webp"
           }
         },
         "slider_5_49Yn3E": {
           "type": "slider-5",
           "settings": {
-            "slider_5_image": "shopify:\/\/shop_images\/Bann_Prx_9.webp"
+            "slider_5_image": "shopify://shop_images/Bann_Prx_9.webp"
           }
         },
         "slider_5_yxMV7E": {
           "type": "slider-5",
           "settings": {
-            "slider_5_image": "shopify:\/\/shop_images\/Bann_Prx_6.webp"
+            "slider_5_image": "shopify://shop_images/Bann_Prx_6.webp"
           }
         },
         "slider_5_zUgxCH": {
           "type": "slider-5",
           "settings": {
-            "slider_5_image": "shopify:\/\/shop_images\/Bann_Prx_4.webp"
+            "slider_5_image": "shopify://shop_images/Bann_Prx_4.webp"
           }
         },
         "slider_5_37DqCC": {
           "type": "slider-5",
           "settings": {
-            "slider_5_image": "shopify:\/\/shop_images\/Bann_Prx_7.webp"
+            "slider_5_image": "shopify://shop_images/Bann_Prx_7.webp"
           }
         }
       },
@@ -222,7 +222,7 @@
         "hero_overlay_header": "LLEVA AL MAXIMO  <br>\nTU RENDIMIENTO",
         "hero_overlay_below_header": "Prosox Cuenta Con Las Canilleras MAS PEQUEÑAS De Todo El Mercado",
         "hero_overlay_button_text": "ADQUIERELAS AHORA",
-        "destination_collection_url": "shopify:\/\/collections"
+        "destination_collection_url": "shopify://collections"
       }
     },
     "logo_slider_KqNHVx": {
@@ -231,67 +231,67 @@
         "logo_f9aJ3w": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Atletico_Nacional.png"
+            "image": "shopify://shop_images/Atletico_Nacional.png"
           }
         },
         "logo_iWF4TU": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Millonarios.png"
+            "image": "shopify://shop_images/Millonarios.png"
           }
         },
         "logo_P8MBPR": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Deportivo_Cali.png"
+            "image": "shopify://shop_images/Deportivo_Cali.png"
           }
         },
         "logo_hnXtji": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/America_de_Cali.png"
+            "image": "shopify://shop_images/America_de_Cali.png"
           }
         },
         "logo_nUwf4T": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Junior.png"
+            "image": "shopify://shop_images/Junior.png"
           }
         },
         "logo_X6x3RL": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Medellin.png"
+            "image": "shopify://shop_images/Medellin.png"
           }
         },
         "logo_V9zgnp": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Envigado.png"
+            "image": "shopify://shop_images/Envigado.png"
           }
         },
         "logo_prkYNe": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Alianza_Petrolera.png"
+            "image": "shopify://shop_images/Alianza_Petrolera.png"
           }
         },
         "logo_GhFBVV": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Pasto.png"
+            "image": "shopify://shop_images/Pasto.png"
           }
         },
         "logo_idWmaz": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Tolima.png"
+            "image": "shopify://shop_images/Tolima.png"
           }
         },
         "logo_MFKxDC": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Santa_Fe.png"
+            "image": "shopify://shop_images/Santa_Fe.png"
           }
         }
       },
@@ -469,7 +469,7 @@
         "image_slide_BgjKQN": {
           "type": "image_slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/02.webp",
+            "image": "shopify://shop_images/02.webp",
             "link": "",
             "description": "",
             "desc_alignment": "center",
@@ -479,7 +479,7 @@
         "image_slide_6ddK8z": {
           "type": "image_slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/01.webp",
+            "image": "shopify://shop_images/01.webp",
             "link": "",
             "description": "",
             "desc_alignment": "center",
@@ -489,7 +489,7 @@
         "image_slide_frxxPD": {
           "type": "image_slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/03.webp",
+            "image": "shopify://shop_images/03.webp",
             "link": "",
             "description": "",
             "desc_alignment": "center",
@@ -499,7 +499,7 @@
         "image_slide_kbNCUY": {
           "type": "image_slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/04.webp",
+            "image": "shopify://shop_images/04.webp",
             "link": "",
             "description": "",
             "desc_alignment": "",
@@ -509,7 +509,7 @@
         "image_slide_GgjLVw": {
           "type": "image_slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/05.webp",
+            "image": "shopify://shop_images/05.webp",
             "link": "",
             "description": "",
             "desc_alignment": "center",
@@ -572,25 +572,25 @@
         "statistic_weXG8H": {
           "type": "statistic",
           "settings": {
-            "image": "shopify:\/\/shop_images\/01_Can.webp",
+            "image": "shopify://shop_images/01_Can.webp",
             "percentage": "95%",
-            "description": "<span style=\"font-weight: bold; color: red;\">Han mejorado<\/span> su rendimiento y habilidades en la cancha"
+            "description": "<span style=\"font-weight: bold; color: red;\">Han mejorado</span> su rendimiento y habilidades en la cancha"
           }
         },
         "statistic_cjVzNj": {
           "type": "statistic",
           "settings": {
-            "image": "shopify:\/\/shop_images\/02_Can.webp",
+            "image": "shopify://shop_images/02_Can.webp",
             "percentage": "95%",
-            "description": "Han <span style=\"font-weight: bold; color: red;\">incrementado su seguridad y confianza<\/span> cuando las papas queman"
+            "description": "Han <span style=\"font-weight: bold; color: red;\">incrementado su seguridad y confianza</span> cuando las papas queman"
           }
         },
         "statistic_DJVTQD": {
           "type": "statistic",
           "settings": {
-            "image": "shopify:\/\/shop_images\/03_Can.webp",
+            "image": "shopify://shop_images/03_Can.webp",
             "percentage": "95%",
-            "description": "<span style=\"font-weight: bold; color: red;\">Han generado ingresos<\/span> con nuestro plan de distribuidores"
+            "description": "<span style=\"font-weight: bold; color: red;\">Han generado ingresos</span> con nuestro plan de distribuidores"
           }
         }
       },
@@ -647,9 +647,9 @@
         "title": "¿PORQUE PROSOX?",
         "title_highlight_color": "#6d388b",
         "heading_size": "h0",
-        "text": "<h3>Somos la marca #1 de los futbolistas colombianos<\/h3>",
+        "text": "<h3>Somos la marca #1 de los futbolistas colombianos</h3>",
         "button_label": "COMPRALAS AHORA",
-        "link": "shopify:\/\/products\/mini-canilleras-prosox",
+        "link": "shopify://products/mini-canilleras-prosox",
         "button_style_secondary": false,
         "atc_button_label": "",
         "atc_product": "",
@@ -659,12 +659,12 @@
         "style": "centered",
         "us_label": "[shop_name]",
         "us_label_size": 18,
-        "logo": "shopify:\/\/shop_images\/Chico.webp",
+        "logo": "shopify://shop_images/Chico.webp",
         "logo_width": 150,
         "mobile_logo_width": 60,
         "others_label": "Otros",
         "others_label_size": 18,
-        "others_logo": "shopify:\/\/shop_images\/Canilller.webp",
+        "others_logo": "shopify://shop_images/Canilller.webp",
         "others_logo_width": 90,
         "others_mobile_logo_width": 60,
         "checkmark_style": "regular",
@@ -703,9 +703,9 @@
           "settings": {
             "icon": "check_circle",
             "filled_icon": true,
-            "image": "shopify:\/\/shop_images\/Recurso_9.svg",
+            "image": "shopify://shop_images/Recurso_9.svg",
             "title": "ENVIOS GRATIS",
-            "text": "<p><\/p><p><\/p>"
+            "text": "<p></p><p></p>"
           }
         },
         "column_Xz4yft": {
@@ -713,7 +713,7 @@
           "settings": {
             "icon": "check_circle",
             "filled_icon": false,
-            "image": "shopify:\/\/shop_images\/Recurso_12.svg",
+            "image": "shopify://shop_images/Recurso_12.svg",
             "title": "PAGA EN CASA",
             "text": ""
           }
@@ -723,9 +723,9 @@
           "settings": {
             "icon": "check_circle",
             "filled_icon": false,
-            "image": "shopify:\/\/shop_images\/Recurso_11.svg",
+            "image": "shopify://shop_images/Recurso_11.svg",
             "title": "CAMBIOS GRATIS",
-            "text": "<p><\/p><p><\/p>"
+            "text": "<p></p><p></p>"
           }
         },
         "column_HJ6dnU": {
@@ -733,9 +733,9 @@
           "settings": {
             "icon": "check_circle",
             "filled_icon": false,
-            "image": "shopify:\/\/shop_images\/Recurso_10.svg",
+            "image": "shopify://shop_images/Recurso_10.svg",
             "title": "GARANTIA DE REMBOOLSO",
-            "text": "<p><\/p><p><\/p>"
+            "text": "<p></p><p></p>"
           }
         }
       },
